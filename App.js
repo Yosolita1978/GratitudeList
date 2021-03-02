@@ -35,7 +35,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   screenLayout: {
-    padding: 70
+    padding: 50
   },
   inputContainer:{
     flexDirection: 'row',
