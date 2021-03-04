@@ -18,7 +18,7 @@ const GratitudeInput = props => {
     <Modal visible={props.visible} animationType='slide'>    
     <View style={styles.inputContainer}>
         <TextInput 
-        placeholder="Express gratitude for" 
+        placeholder="Things to be Grateful For" 
         style={styles.textContainer} 
         onChangeText={inputHandler}
         value={enteredInput}/>
@@ -34,22 +34,25 @@ const styles = StyleSheet.create({
     inputContainer:{
         justifyContent: 'center',
         alignItems: 'center',
-        flex: 1
+        flex: 1,
       },
       textContainer:{
         width: '80%',
         borderBottomColor: 'black',
         borderBottomWidth: 1,
         padding: 5, 
-        marginBottom: 5
+        marginBottom: 5,
+        textAlign: 'center'
       }, 
       buttonContainer: {
           flexDirection: 'row',
           justifyContent: 'space-around',
           width: '60%'
-      }, 
+    }, 
       button:{
-          width: '40%'
+          width: '40%',
+          elevation: 10,
+          borderRadius: 10
       } 
 });
 

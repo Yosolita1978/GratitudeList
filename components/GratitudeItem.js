@@ -14,12 +14,14 @@ const GratitudeItem = props => {
 
 const styles = StyleSheet.create({
     listItem: {
-        width: '90%',
-        borderColor: '#C4B6C0',
-        borderWidth: 1,
         backgroundColor: '#EECEE5',
+        borderBottomColor: '#bbb',
+        borderBottomWidth: StyleSheet.hairlineWidth,
         padding: 10,
-        marginVertical:5
+        marginVertical:5,
+        marginTop: 10,
+        borderRadius: 10,
+        elevation: 8
       }
 });
 
