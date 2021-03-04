@@ -3,6 +3,7 @@ import { StatusBar, StyleSheet, View, Button, FlatList, Text, TouchableOpacity }
 import { LinearGradient } from 'expo-linear-gradient';
 import GratitudeItem from './components/GratitudeItem';
 import GratitudeInput from './components/GratitudeInput';
+import Header from './components/header';
 
 export default function App() {
   
@@ -29,7 +30,7 @@ export default function App() {
   return (
     <LinearGradient style={styles.screenLayout} colors={['#EDCCE4', '#DB99C8', '#FFFFFF']} >
       <StatusBar  barStyle={'light-content'}/>
-      <Text style={styles.appTitle}>Gratitude List</Text>
+      <Header/>
       <TouchableOpacity style={styles.buttonContainer} onPress={() => setAddMode(true)}>
       <Text style={styles.buttonText}>Express gratitude</Text>
       </TouchableOpacity>
@@ -54,20 +55,13 @@ const styles = StyleSheet.create({
   screenLayout: {
     padding: 50
   }, 
-  appTitle:{
-    color: '#fff',
-    fontSize: 26,
-    marginTop: 50,
-    marginBottom: 30,
-    fontWeight: '200',
-    textAlign: 'center'
-  }, 
-  buttonContainer:{
+    buttonContainer:{
     elevation: 8,
     backgroundColor: "#7084CD",
     borderRadius: 10,
     paddingVertical: 10,
-    paddingHorizontal: 12
+    paddingHorizontal: 12, 
+    marginTop: 20
   }, 
   buttonText: {
     fontSize: 18,

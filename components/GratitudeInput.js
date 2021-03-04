@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         flex: 1,
       },
       textContainer:{
-        width: '80%',
+        width: '100%',
         borderBottomColor: 'black',
         borderBottomWidth: 1,
         padding: 5, 
